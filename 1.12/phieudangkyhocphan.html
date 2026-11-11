@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu đăng ký học phần</title>
+</head>
+<body>
+    <div class="form-container">
+    <h1>PHIẾU ĐĂNG KÝ HỌC PHẦN</h1>
+    
+    <form action="#" method="POST">
+        
+        
+        <fieldset>
+            <legend>Thông tin đăng ký</legend>
+            
+            <div class="form-group">
+                <label for="hocKy">Học kỳ:</label>
+                <select id="hocKy" name="hoc_ky">
+                    <option value="1">Học kỳ 1</option>
+                    <option value="2">Học kỳ 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hình thức học:</label>
+                <input type="radio" id="tt" name="hinh_thuc" value="truc_tiep">
+                <label for="tt" style="font-weight: normal; margin-right: 10px;">Trực tiếp</label>
+                
+                <input type="radio" id="tl" name="hinh_thuc" value="truc_tuyen">
+                <label for="tl" style="font-weight: normal;">Trực tuyến</label>
+            </div>
+
+            <div class="form-group">
+                <label for="ghiChu">Ghi chú:</label><br>
+                <textarea id="ghiChu" name="ghi_chu" placeholder="Nhập ghi chú"></textarea>
+            </div>
+        </fieldset>
+
+      
+        <fieldset>
+            <legend>Nguyện vọng học tập</legend>
+            
+            <div class="form-group">
+                <label for="caHoc">Ca học mong muốn:</label>
+                <select id="caHoc" name="ca_hoc">
+                    <option value="sang">Sáng</option>
+                    <option value="chieu">Chiều</option>
+                    <option value="toi">Tối</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nguyenVong">Yêu cầu hoặc nguyện vọng:</label><br>
+                <textarea id="nguyenVong" name="nguyen_vong" placeholder="Nhập nguyện vọng của sinh viên"></textarea>
+            </div>
+        </fieldset>
+
+      
+        <div class="buttons">
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

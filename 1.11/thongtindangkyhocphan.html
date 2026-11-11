@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đăng ký học phần</title>
+</head>
+<body>
+   <div class="form-container">
+    <h1>THÔNG TIN ĐĂNG KÝ HỌC PHẦN</h1>
+    
+    <form action="#" method="POST">
+    
+        <div class="form-group">
+            <label for="hocKy" style="font-weight: bold;">Học kỳ:</label>
+            <select id="hocKy" name="hoc_ky">
+                <option value="1">Học kỳ 1</option>
+                <option value="2">Học kỳ 2</option>
+                <option value="3">Học kỳ phụ</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group">
+            <p>Hình thức học:</p>
+            <div class="radio-group">
+                <input type="radio" id="tt" name="hinh_thuc" value="truc_tiep">
+                <label for="tt">Trực tiếp</label>
+                
+                <input type="radio" id="tl" name="hinh_thuc" value="truc_tuyen">
+                <label for="tl">Trực tuyến</label>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <p>Học phần muốn đăng ký:</p>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hp1" name="hoc_phan" value="web">
+                <label for="hp1">Thiết kế Web</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hp2" name="hoc_phan" value="csdl">
+                <label for="hp2">Cơ sở dữ liệu</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hp3" name="hoc_phan" value="cnpm">
+                <label for="hp3">Công nghệ phần mềm</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="hp4" name="hoc_phan" value="oop">
+                <label for="hp4">Lập trình hướng đối tượng</label>
+            </div>
+        </div>
+
+  
+        <div class="form-group">
+            <label for="caHoc" style="font-weight: bold;">Ca học mong muốn:</label>
+            <select id="caHoc" name="ca_hoc">
+                <option value="sang">Sáng</option>
+                <option value="chieu">Chiều</option>
+                <option value="toi">Tối</option>
+            </select>
+        </div>
+
+     
+        <div class="form-group" style="margin-bottom: 0;">
+            <button type="submit">Xác nhận</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
